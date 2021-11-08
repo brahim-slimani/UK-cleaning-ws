@@ -1,9 +1,8 @@
+import {MasterPage} from 'components/custom';
 
 function App() {
   return (
-    <div className="App">
-      From root component!
-    </div>
+   <MasterPage />
   );
 }
 
