@@ -1,18 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header, LandingPage } from 'components/custom/';
-import 'assets/css/index.css';
-import 'assets/css/jquery.fancybox.css';
-import 'assets/css/theme-color/default.css';
-import 'assets/css/style.css';
-import 'assets/css/owl.carousel.css';
-//import 'assets/css/ionicons.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'assets/css/layers.css';
-import 'assets/css/settings.css';
-import 'assets/css/footer.css';
+import { ImportScript, ImportLink } from 'components/shared';
 
 
 export const MasterPage = (props) => {
+
+    const resources = [
+        'assets/js/jquery.min.js',
+        'assets/js/jquery.mousewheel-3.0.6.pack.js',
+        'assets/js/jquery.fancybox.pack.js',
+        'assets/js/jquery.magnific-popup.min.js',
+        'assets/js/imagesloaded.pkgd.min.js',
+        'assets/js/isotope.pkgd.min.js',
+        'assets/js/jquery.themepunch.revolution.min.js',
+        'assets/js/jquery.revolution.js',
+        'assets/js/custom1.js',
+        'assets/js/owl.carousel.js',
+        'assets/js/jquery.themepunch.tools.min.js'
+    ];
+
+    const styles = [
+        'assets/css/index.css',
+        'assets/css/jquery.fancybox.css',
+        'assets/css/theme-color/default.css',
+        'assets/css/style.css',
+        'assets/css/owl.carousel.css',
+        'bootstrap/dist/css/bootstrap.min.css',
+        'assets/css/layers.css',
+        'assets/css/settings.css',
+        'assets/css/footer.css',
+        'jquery/dist/jquery.slim',
+        'assets/css/bootstrap.min.css',
+        'assets/css/font-awesome.css',
+    ]
+
+    ImportScript(resources);
+    ImportLink(styles);
+
     return (
         <div>
             <Header />
