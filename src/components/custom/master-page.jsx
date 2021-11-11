@@ -1,21 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Header, LandingPage } from 'components/custom/';
-import { ImportScript, ImportLink } from 'components/shared';
-import $ from 'jquery';
+import { Header, LandingPage, AboutSection } from 'components/custom/';
+import { Loader } from 'components/shared'
+import Helper from 'helper/index';
 
-
-let appendScript = (url) => {
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    //script.async = true;
-    script.id = url.slice(10, url.length);
-    document.body.appendChild(script);
-}
-
-const importScripts = (resourceUrls) => {
-    resourceUrls.forEach(url => appendScript(url));
-}
 
 export const MasterPage = () => {
 
@@ -42,9 +29,8 @@ export const MasterPage = () => {
         "assets/js/custom1.js",
         'assets/js/custom.js',
         "assets/js/tether.min.js",
-		"assets/js/bootstrap.min.js",
-		"assets/js/jquery.easing.js"
-
+        "assets/js/bootstrap.min.js",
+        "assets/js/jquery.easing.js"
     ];
 
     const styles = [
@@ -53,7 +39,7 @@ export const MasterPage = () => {
         'assets/css/index.css',
         'assets/css/header.css',
         'assets/css/jquery.fancybox.css',
-        
+
         'assets/css/bootstrap.min.css',
         'assets/css/style.css',
         'assets/css/owl.carousel.css',
@@ -67,30 +53,20 @@ export const MasterPage = () => {
         'assets/css/theme-color/default.css',
     ]
 
-    //ImportScript(resources);
-    ImportLink(styles);
 
     const [shouldbeRendred, setShouldbeRendred] = useState(false);
 
-    const importJquery = () => {
-        var script = document.createElement('script');
-        script.src = '/assets/js/jquery.min.js'//'http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'//;////'https://code.jquery.com/jquery-3.4.1.min.js'
-        script.type = 'text/javascript';
-        script.id = 'jquery-lib'
-        document.body.appendChild(script);
-    }
-
-
     useEffect(() => {
-        Promise.resolve(importJquery()).then(() => {
-            window.onload = function () {
+        Helper.importStyles(styles);
+        Promise.resolve(Helper.importScripts(['/assets/js/jquery.min.js'])).then(() => {
+            window.onload = () => {
                 if (window.jQuery) {
                     // jQuery is loaded  
-                    importScripts(resources);
+                    Helper.importScripts(resources);
                     setShouldbeRendred(true);
                 } else {
                     // jQuery is not loaded
-                    alert("Doesn't Work");
+                    alert("Something went rong !");
                 }
             }
         });
@@ -101,27 +77,12 @@ export const MasterPage = () => {
         <>
             {
                 !shouldbeRendred ?
-                    <div div id="preloader">
-                        <div class="sk-circle">
-                            <div class="sk-circle1 sk-child"></div>
-                            <div class="sk-circle2 sk-child"></div>
-                            <div class="sk-circle3 sk-child"></div>
-                            <div class="sk-circle4 sk-child"></div>
-                            <div class="sk-circle5 sk-child"></div>
-                            <div class="sk-circle6 sk-child"></div>
-                            <div class="sk-circle7 sk-child"></div>
-                            <div class="sk-circle8 sk-child"></div>
-                            <div class="sk-circle9 sk-child"></div>
-                            <div class="sk-circle10 sk-child"></div>
-                            <div class="sk-circle11 sk-child"></div>
-                            <div class="sk-circle12 sk-child"></div>
-                        </div>
-                    </div>
-
+                    <Loader />
                     :
                     <>
                         <Header />
                         <LandingPage />
+                        <AboutSection />
                     </>
             }
         </>

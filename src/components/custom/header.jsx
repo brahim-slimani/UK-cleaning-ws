@@ -3,25 +3,6 @@ import $ from 'jquery';
 
 export const Header = (props) => {
 
-    $(document).ready(function () {
-        function navBaar() {
-            var headerHeight = $('.header');
-            var stricky_header_top = $('.nav-wrap');
-            if (stricky_header_top.length) {
-                var stricky_header_top_Offset = headerHeight.height();
-                $(window).on('scroll', function () {
-                    var top_scroll = $(window).scrollTop();
-                    if (top_scroll > stricky_header_top_Offset) {
-                        stricky_header_top.addClass('stricky');
-                    } else {
-                        stricky_header_top.removeClass('stricky');
-                    }
-                });
-            }
-        }
-        //navBaar();
-    })
-
     return (
         <header id="header" class="header header-1 header_tran">
             <div id="top-bar" class="top-bar-section top-bar-bg-color">
