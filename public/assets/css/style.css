@@ -1202,7 +1202,7 @@ figure {
 	margin: 0px;
 }
 .bg-img {
-	background: url(../image/bg_1.jpg) 0 36% no-repeat;
+	background: url(../images/bg_1.jpg) 0 36% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -1234,7 +1234,6 @@ figure {
 		transform: rotate(0);
 		-webkit-transform: rotate(0);
 		transform-origin: 100% 0;
-		/* -webkit- transform-origin: 100% 0; */
 		opacity: 0.9;
 	}
 }
@@ -3844,12 +3843,10 @@ transform: scale(1);
 	max-width: none;
 }
 .bg-img-1 {
-	/* background: url(../images/new_slider02.html) 0 0 no-repeat; */
 	background-size: cover
 }
 
 .bg-img-2 {
-	/* background: url(../images/slider-home-construction-02.html) 0 0 no-repeat; */
 	background-size: cover
 }
 /*Gallery*/
@@ -4007,7 +4004,6 @@ transform: scale(1);
 }
 
 #statement {
-	/* background-image: url(../images/02.html); */
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4810,7 +4806,6 @@ transform: scale(1);
 	font-weight: 300;
 }
 .img-bg {
-	/* background: url(../images/white-texture.html) 0 0 no-repeat; */
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -4819,10 +4814,9 @@ transform: scale(1);
 	color: #fff;
 }
 .parallax, .bg_img1 {
-	/* background: url(../images/parallax2.jpg) no-repeat; */
+	background: url(../images/parallax2.jpg) no-repeat;
 }
 #overlay_block, .bg_img {
-	/* background: url(../images/parallax1.html) no-repeat; */
 }
 .parallax, #overlay_bloc {
 	background-size: cover;
@@ -4927,7 +4921,6 @@ transform: scale(1);
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	/* background: url(../images/corve.html) center 45px no-repeat; */
 	background-size: 100% auto;
 }
 .about-box {
@@ -5052,7 +5045,6 @@ transform: scale(1);
 	position: relative;
 }
 .image_cover {
-	/* background-image: url(../images/bg-10.html); */
 	background-size: cover;
 	display: block;
 	position: absolute;
@@ -5068,7 +5060,6 @@ transform: scale(1);
 	width: 50%;
 	right: 0;
 	left: auto;
-	/* background-image: url(../images/bg-11.html); */
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	#choose_us .image_cover {
@@ -5617,15 +5608,15 @@ filter: alpha(opacity=0);
 	background: #000;
 }
 .abt-block__img1 {
-	background: url(../image/people.jpg) center 0 no-repeat;
+	background: url(../images/people.jpg) center 0 no-repeat;
 	background-size: cover;
 }
 .abt-block__img2 {
-	background: url(../image/people1.jpg) center 0 no-repeat;
+	background: url(../images/people1.jpg) center 0 no-repeat;
 	background-size: cover;
 }
 .abt-block__img3 {
-	background: url(../image/people2.jpg) center 0 no-repeat;
+	background: url(../images/people2.jpg) center 0 no-repeat;
 	background-size: cover;
 }
 .abt-block__left h2 {
@@ -5844,7 +5835,6 @@ filter: alpha(opacity=0);
 	vertical-align: middle;
 }
 .history-block__img1 {
-	/* background: url(../images/graph.html) center 0 no-repeat; */
 	background-size: cover;
 }
 .career_sub-title {

@@ -1,8 +1,9 @@
-import {MasterPage} from 'components/custom';
+import { MasterPage } from 'components/custom';
 
 function App() {
+
   return (
-   <MasterPage />
+    <MasterPage />
   );
 }
 
