@@ -39,23 +39,32 @@ export const MasterPage = () => {
         "assets/js/jquery.themepunch.revolution.min.js",
         "assets/js/jquery.revolution.js",
         // custom Js
-        "assets/js/custom1.js"
+        "assets/js/custom1.js",
+        'assets/js/custom.js',
+        "assets/js/tether.min.js",
+		"assets/js/bootstrap.min.js",
+		"assets/js/jquery.easing.js"
+
     ];
 
     const styles = [
-        'assets/css/index1.css',
+        //'assets/css/index1.css',
         'assets/css/header1.css',
+        'assets/css/index.css',
+        'assets/css/header.css',
         'assets/css/jquery.fancybox.css',
-        'assets/css/theme-color/default.css',
+        
+        'assets/css/bootstrap.min.css',
         'assets/css/style.css',
         'assets/css/owl.carousel.css',
-        'bootstrap/dist/css/bootstrap.min.css',
+        //'assets/css/bootstrap.min.css',
         'assets/css/layers.css',
         'assets/css/settings.css',
         'assets/css/footer1.css',
-        'jquery/dist/jquery.slim',
-        'assets/css/bootstrap.min.css',
+        'assets/css/footer.css',
         'assets/css/font-awesome.css',
+        'assets/css/ionicons.css',
+        'assets/css/theme-color/default.css',
     ]
 
     //ImportScript(resources);
@@ -65,7 +74,7 @@ export const MasterPage = () => {
 
     const importJquery = () => {
         var script = document.createElement('script');
-        script.src = '/assets/js/jquery.min.js';//"http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js";//'https://code.jquery.com/jquery-3.4.1.min.js';
+        script.src = '/assets/js/jquery.min.js'//'http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'//;////'https://code.jquery.com/jquery-3.4.1.min.js'
         script.type = 'text/javascript';
         script.id = 'jquery-lib'
         document.body.appendChild(script);
@@ -85,7 +94,7 @@ export const MasterPage = () => {
                 }
             }
         });
-    }, [])
+    }, []);
 
 
     return (
