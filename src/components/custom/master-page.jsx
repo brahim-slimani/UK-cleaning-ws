@@ -36,7 +36,7 @@ export const MasterPage = () => {
         "assets/js/jquery.revolution.js",
 
         // custom Js
-        //"assets/js/custom1.js",
+        "assets/js/custom1.js",
         'assets/js/custom.js',
 
     ];
@@ -90,9 +90,9 @@ export const MasterPage = () => {
                         <Header />
                         <LandingPage />
                         <AboutSection />
+                        <CounterSection />
                         {/* <ServicesSection /> */}
                         <TeamSection />
-                        <CounterSection />
                         <WorkSection />
                     </>
             }
