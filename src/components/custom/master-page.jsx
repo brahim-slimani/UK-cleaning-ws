@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Header, LandingPage, AboutSection, ServicesSection, TeamSection, CounterSection, WorkSection, TestimonialSection } from 'components/custom/';
+import { Header, LandingPage, AboutSection, ServicesSection, TeamSection, CounterSection, WorkSection, TestimonialSection, Footer } from 'components/custom/';
 import { Loader } from 'components/shared'
 import Helper from 'helper/index';
 
@@ -95,6 +95,7 @@ export const MasterPage = () => {
                         <TeamSection />
                         <WorkSection />
                         {/* <TestimonialSection /> */}
+                        <Footer />
                     </>
             }
         </>
