@@ -92,7 +92,6 @@
   display: block;
 }
 .owl-carousel.owl-loading {
-  opacity: 0;
   display: block;
 }
 .owl-carousel.owl-hidden {

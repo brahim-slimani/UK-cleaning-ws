@@ -1,4 +1,4 @@
-$(document).on('ready',function() {
+$(document).ready(function() {
 	"use strict";
 	
 	/*----------------------------------------------
