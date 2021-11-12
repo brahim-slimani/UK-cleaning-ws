@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ContactForm = (props) => {
     return (
-        <section class="question_sec pt-90 pt-xs-40 mb-5">
+        <section class="question_sec pt-90 pt-xs-40 mb-">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">

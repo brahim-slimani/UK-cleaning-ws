@@ -36,7 +36,7 @@ export const LandingPage = (props) => {
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
                                     </p>
-                                    <a class="btn-text" href="#"> Read More</a>
+                                    <a class="btn-text" href="#" style={{ padding: "17px" }}> Read More</a>
                                 </div>
                             </div>
                         </li>
