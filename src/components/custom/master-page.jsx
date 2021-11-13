@@ -18,6 +18,7 @@ import Helper from 'helper/index';
 export const MasterPage = () => {
 
     const resources = [
+        
         "assets/js/tether.min.js",
         "assets/js/bootstrap.min.js",
         "assets/js/jquery.easing.js",
@@ -49,7 +50,7 @@ export const MasterPage = () => {
         // custom Js
         "assets/js/custom1.js",
         'assets/js/custom.js',
-
+        'assets/js/jquery.min.js',
     ];
 
     const styles = [
@@ -66,8 +67,6 @@ export const MasterPage = () => {
         'assets/css/footer.css',
         'assets/css/index.css',
         'assets/css/theme-color/default.css',
-
-
         'assets/css/magnific-popup',
     ]
 
@@ -76,7 +75,7 @@ export const MasterPage = () => {
 
     useEffect(() => {
         Helper.importStyles(styles);
-        Promise.resolve(Helper.importScripts(['/assets/js/jquery.min.js'])).then(() => {
+        Promise.resolve(Helper.importScripts(['assets/js/jquery.min.js'])).then(() => {
             window.onload = () => {
                 if (window.jQuery) {
                     // jQuery is loaded  
@@ -84,7 +83,7 @@ export const MasterPage = () => {
                     setShouldbeRendred(true);
                 } else {
                     // jQuery is not loaded
-                    alert("Something went rong !");
+                    alert("Something went rong !");setShouldbeRendred(true);
                 }
             }
         });
@@ -102,10 +101,10 @@ export const MasterPage = () => {
                         <LandingPage />
                         <AboutSection />
                         <CounterSection />
-                        {/* <ServicesSection /> */}
+                        <ServicesSection />
                         <TeamSection />
                         <WorkSection />
-                        {/* <TestimonialSection /> */}
+                        <TestimonialSection />
                         <ContactForm />
                         <Footer />
                     </>
