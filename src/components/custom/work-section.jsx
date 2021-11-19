@@ -20,19 +20,19 @@ export const WorkSection = (props) => {
                     <div class="col-lg-8 offset-lg-2">
                         <ul class="container-filter categories-filter">
                             <li>
-                                <a class="categories active" data-filter="*">All</a>
+                                <a href class="categories active" data-filter="*">All</a>
                             </li>
                             <li>
-                                <a class="categories" data-filter=".branding">Branding</a>
+                                <a href class="categories" data-filter=".branding">Branding</a>
                             </li>
                             <li>
-                                <a class="categories" data-filter=".design">Design</a>
+                                <a href class="categories" data-filter=".design">Design</a>
                             </li>
                             <li>
-                                <a class="categories" data-filter=".photo">Photo</a>
+                                <a href class="categories" data-filter=".photo">Photo</a>
                             </li>
                             <li>
-                                <a class="categories" data-filter=".coffee">coffee</a>
+                                <a href class="categories" data-filter=".coffee">coffee</a>
                             </li>
                         </ul>
                     </div>
@@ -42,13 +42,12 @@ export const WorkSection = (props) => {
 
                     <div class="nf-item branding coffee spacing">
                         <div class="item-box">
-                            <a> <img alt="1" src="assets/images/project/project_1.jpg" class="item-container" /> </a>
+                            <a href> <img alt="1" src="assets/images/project/project_1.jpg" class="item-container" /> </a>
                             <div class="link-zoom">
                                 <a href="project-details.html" class="project_links same_style"> <i class="fa fa-link"> </i> </a>
                                 <a href="assets/images/project/project_1.jpg" class="fancylight popup-btn same_style" data-fancybox-group="light" > <i class="fa fa-search-plus"></i> </a>
                                 <div class="gallery-heading">
-                                    <h4><a href="#">Cleaning Services</a></h4>
-
+                                    <h4><a href>Cleaning Services</a></h4>
                                 </div>
                             </div>
 

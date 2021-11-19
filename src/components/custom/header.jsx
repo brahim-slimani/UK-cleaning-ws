@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
+import { INFO_UTILITY } from 'helper';
 
 export const Header = (props) => {
 
@@ -12,13 +12,13 @@ export const Header = (props) => {
                             <div class="top_loction pull-left">
                                 <ul>
                                     <li>
-                                        <a href="#!"><i class="fa fa-map-marker"></i> 123 Main Street, St. NW Ste </a>
+                                        <a href="#!"><i class="fa fa-map-marker"></i> {INFO_UTILITY.COMPANY_ADDRESS} </a>
                                     </li>
                                     <li>
-                                        <a href="mailto:Support@Domain.Com"><i class="fa fa-envelope"></i> Support@Domain.Com</a>
+                                        <a href="mailto:Support@Domain.Com"><i class="fa fa-envelope"></i> {INFO_UTILITY.COMPANY_EMAIL}</a>
                                     </li>
                                     <li>
-                                        <a href="tel:1234567890"><i class="fa fa-phone"></i> +91 123 456 7890</a>
+                                        <a href="tel:1234567890"><i class="fa fa-phone"></i> {INFO_UTILITY.COMPANY_PHONE}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -27,11 +27,10 @@ export const Header = (props) => {
                         <div class="col-lg-4">
                             <div class="top-social-icon icons-hover-black">
                                 <div class="icons-hover-black">
-                                    <a href="javascript:avoid(0);"> <i class="fa fa-facebook"></i> </a>
-                                    <a href="javascript:avoid(0);"> <i class="fa fa-twitter"></i> </a>
-                                    <a href="javascript:avoid(0);"> <i class="fa fa-youtube"></i> </a>
-                                    <a href="javascript:avoid(0);"> <i class="fa fa-dribbble"></i> </a>
-                                    <a href="javascript:avoid(0);"> <i class="fa fa-linkedin"></i> </a>
+                                    <a href> <i class="fa fa-facebook"></i> </a>
+                                    <a href> <i class="fa fa-twitter"></i> </a>
+                                    <a href> <i class="fa fa-youtube"></i> </a>
+                                    <a href> <i class="fa fa-linkedin"></i> </a>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +44,7 @@ export const Header = (props) => {
                         <div class="row d-flex align-items-center">
                             <div class="col-md-3">
                                 <div class="logo">
-                                    <a href="index-2.html"><img src="assets/images/logo.png" alt="" /></a>
+                                    <a href="index-2.html"><img src="assets/images/Colbritish_Logo.png" alt="" /></a>
                                 </div>
                                 {/* Phone Menu button */}
                                 <button id="menu" class="menu hidden-md-up"></button>
@@ -55,47 +54,27 @@ export const Header = (props) => {
                                     <ul>
                                         <li>
                                             <a href="#!">Home</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
                                         </li>
                                         <li>
-                                            <a href="#!">About us</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
+                                            <a href="#about">About us</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:avoid(0);">Services</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
+                                            <a href="#company-overview">Overview</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:avoid(0);">Project</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
-                                        </li>
-
-                                        <li>
-                                            <a href="javascript:avoid(0);">blog</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
-                                        </li>
-
-                                        <li>
-                                            <a href="javascript:avoid(0);">pages</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
+                                            <a href="#services">Services</a>
                                         </li>
                                         <li>
-                                            <a href="#!">Shop</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-                                            {/* Nav Dropdown */}
-
-                                            {/* End Nav Dropdown */}
+                                            <a href="#team">Team</a>
                                         </li>
                                         <li>
-                                            <a href="#!">Contact us</a>
-                                            <i class="ion-ios-plus-empty hidden-md-up"></i>
-
+                                            <a href="#work">Project</a>
+                                        </li>
+                                        <li>
+                                            <a href="#testimonial">Testimonial</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-form">Contact us</a>
                                         </li>
                                     </ul>
 

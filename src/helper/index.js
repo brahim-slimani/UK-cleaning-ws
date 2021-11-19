@@ -14,7 +14,7 @@ class Helper {
 
     appendLink = (url, rel, type) => {
         const link = document.createElement('link');
-        link.rel  = rel;
+        link.rel = rel;
         link.type = type;
         link.href = url;
         document.getElementsByTagName('head')[0].appendChild(link);
@@ -27,3 +27,4 @@ class Helper {
 
 }
 export default new Helper();
+export * from './constants';

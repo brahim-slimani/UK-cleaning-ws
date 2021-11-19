@@ -3,7 +3,7 @@ import React from 'react';
 export const TeamSection = (props) => {
     return (
       
-		<section class="padding ptb-xs-40">
+		<section id="team" class="padding ptb-xs-40">
 			<div class="container">
 				<div class="row text-center mb-40 mb-xs-30">
 					<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">

@@ -3,7 +3,7 @@ import React from 'react';
 export const AboutSection = (props) => {
     return (
         // About
-        <section class="padding ptb-xs-40">
+        <section id="about" class="padding ptb-xs-40">
             <div class="container">
                 <div class="row pb-30">
                     <div class="col-md-4 d-flex align-items-center">

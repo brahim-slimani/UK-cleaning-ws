@@ -2,7 +2,7 @@ import React from 'react';
 
 export const TestimonialSection = (props) => {
     return (
-        <section class="padding ptb-xs-40 bg_Testimonial">
+        <section id="testimonial" class="padding ptb-xs-40 bg_Testimonial">
             <div class="container">
                 <div class="row text-center light-color mb-40 mb-xs-30">
                     <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">

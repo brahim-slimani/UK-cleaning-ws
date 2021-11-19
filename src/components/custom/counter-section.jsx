@@ -3,7 +3,7 @@ import React from 'react';
 export const CounterSection = (props) => {
     return (
         <div>
-            <section class="padding ptb-xs-40 counter_sec">
+            <section id="company-overview" class="padding ptb-xs-40 counter_sec">
                 <div class="container">
                     <div class="row text-center light-color mb-40 mb-xs-30">
                         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
