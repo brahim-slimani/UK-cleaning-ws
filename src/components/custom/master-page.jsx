@@ -11,11 +11,11 @@ import {
     ContactForm,
     Footer
 } from 'components/custom/';
-import { Loader } from 'components/shared'
+import { Loader, ScrollerBtn } from 'components/shared'
 import Helper from 'helper/index';
 
 export const MasterPage = () => {
-    
+
     const [shouldbeRendred, setShouldbeRendred] = useState(false);
 
     useEffect(() => {
@@ -48,7 +48,7 @@ export const MasterPage = () => {
             'assets/js/custom.js',
             'assets/js/jquery.min.js',
         ];
-    
+
         const styles = [
             'assets/css/bootstrap.min.css',
             'assets/css/font-awesome.css',
@@ -63,7 +63,7 @@ export const MasterPage = () => {
             'assets/css/index.css',
             'assets/css/theme-color/default.css',
         ]
-        
+
         Helper.importStyles(styles);
         Promise.resolve(Helper.importScripts(['assets/js/jquery.min.js'])).then(() => {
             window.onload = () => {
@@ -73,7 +73,7 @@ export const MasterPage = () => {
                     setShouldbeRendred(true);
                 } else {
                     // jQuery is not loaded
-                    alert("Something went rong !");setShouldbeRendred(true);
+                    alert("Something went rong !"); setShouldbeRendred(true);
                 }
             }
         });
@@ -97,6 +97,7 @@ export const MasterPage = () => {
                         <ContactForm />
                         <TestimonialSection />
                         <Footer />
+                        <ScrollerBtn />
                     </>
             }
         </>
