@@ -2,8 +2,35 @@ import React from 'react';
 import { TeamMemberCard } from 'components/shared';
 
 export const TeamSection = () => {
-	return (
 
+	const teams = [
+		{
+			name: "Josh Philippe",
+			position: "Cleaner",
+			image: "assets/images/team/team1.jpg",
+			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
+		},
+		{
+			name: "Marcus Stoinis",
+			position: "Cleaner",
+			image: "assets/images/team/team2.jpg",
+			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
+		},
+		{
+			name: "Jackson Coleman",
+			position: "Cleaner",
+			image: "assets/images/team/team3.jpg",
+			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
+		},
+		{
+			name: "Mackenzie Harvey",
+			position: "Cleaner",
+			image: "assets/images/team/team4.jpg",
+			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
+		}
+	]
+
+	return (
 		<section id="team" class="padding ptb-xs-40">
 			<div class="container">
 				<div class="row text-center mb-40 mb-xs-30">
@@ -19,10 +46,9 @@ export const TeamSection = () => {
 				</div>
 
 				<div class="row">
-					<TeamMemberCard name="Josh Philippe" position="Cleaner" image="assets/images/team/team1.jpg" socialLinks={{ fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }} />
-					<TeamMemberCard name="Marcus Stoinis" position="Cleaner" image="assets/images/team/team2.jpg" socialLinks={{ fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }} />
-					<TeamMemberCard name="Jackson Coleman" position="Cleaner" image="assets/images/team/team3.jpg" socialLinks={{ fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }} />
-					<TeamMemberCard name="Mackenzie Harvey" position="Cleaner" image="assets/images/team/team4.jpg" socialLinks={{ fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }} />
+					{
+						teams.map((teammate, index) => <TeamMemberCard key={index} {...teammate} />)
+					}
 				</div>
 
 			</div>

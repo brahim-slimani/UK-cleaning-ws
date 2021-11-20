@@ -2,6 +2,26 @@ import React from 'react';
 import { FeatureItem } from 'components/shared';
 
 export const AboutSection = () => {
+
+    const features = [
+        {
+            icon: "assets/images/cleaning-lady.svg",
+            title: "Expert"
+        },
+        {
+            icon: "assets/images/cleaner.svg",
+            title: "Secure Services"
+        },
+        {
+            icon: "assets/images/clean.svg",
+            title: "Low Costing"
+        },
+        {
+            icon: "assets/images/clean-1.svg",
+            title: "On time"
+        }
+    ]
+
     return (
         // About
         <section id="about" class="padding ptb-xs-40">
@@ -25,10 +45,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div class="row mt-30 mt-xs-0">
-                    <FeatureItem icon="assets/images/cleaning-lady.svg" title="Expert" />
-                    <FeatureItem icon="assets/images/cleaner.svg" title="Secure Services" />
-                    <FeatureItem icon="assets/images/clean.svg" title="Low Costing" />
-                    <FeatureItem icon="assets/images/clean-1.svg" title="On Time" />
+                    {
+                        features.map((feature, index) => <FeatureItem key={index} {...feature} />)
+                    }
                 </div>
             </div>
         </section>

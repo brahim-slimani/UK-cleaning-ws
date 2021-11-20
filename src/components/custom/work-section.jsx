@@ -2,6 +2,34 @@ import React from 'react';
 import { ProjectItem } from 'components/shared';
 
 export const WorkSection = () => {
+
+    const projects = [
+        {
+            title: 'Cleaning Services',
+            image: "assets/images/project/project_1.jpg"
+        },
+        {
+            title: 'Cleaning Services',
+            image: "assets/images/project/project_2.jpg"
+        },
+        {
+            title: 'Cleaning Services',
+            image: "assets/images/project/project_3.jpg"
+        },
+        {
+            title: 'Cleaning Services',
+            image: "assets/images/project/project_4.jpg"
+        },
+        {
+            title: 'Cleaning Services',
+            image: "assets/images/project/project_5.jpg"
+        },
+        {
+            title: 'Cleaning Services',
+            image: "assets/images/project/project_6.jpg"
+        }
+    ];
+
     return (
         <section id="work" class="padding ptb-xs-40">
             <div class="container">
@@ -40,12 +68,9 @@ export const WorkSection = () => {
                 </div>
                 {/* End work Filter */}
                 <div class="row container-grid nf-col-3">
-                    <ProjectItem image="assets/images/project/project_1.jpg" title="Cleaning Services" />
-                    <ProjectItem image="assets/images/project/project_2.jpg" title="Cleaning Services" />
-                    <ProjectItem image="assets/images/project/project_3.jpg" title="Cleaning Services" />
-                    <ProjectItem image="assets/images/project/project_4.jpg" title="Cleaning Services" />
-                    <ProjectItem image="assets/images/project/project_5.jpg" title="Cleaning Services" />
-                    <ProjectItem image="assets/images/project/project_6.jpg" title="Cleaning Services" />
+                   {
+                       projects.map((project, index) => <ProjectItem key={index} {...project} />)
+                   }
                 </div>
             </div>
         </section>

@@ -2,6 +2,40 @@ import { ServiceBox } from 'components/shared';
 import React from 'react';
 
 export const ServicesSection = () => {
+
+    const services = [
+        {
+            image: "assets/images/service/img_1.jpg",
+            title: "House Cleaning",
+            link: "#"
+        },
+        {
+            image: "assets/images/service/img_2.jpg",
+            title: "Apartment Cleaning",
+            link: "#"
+        },
+        {
+            image: "assets/images/service/img_3.jpg",
+            title: "Carpet Cleaning",
+            link: "#"
+        },
+        {
+            image: "assets/images/service/img_4.jpg",
+            title: "Commercial Cleaning",
+            link: "#"
+        },
+        {
+            image: "assets/images/service/img_5.jpg",
+            title: "Residential Cleaning",
+            link: "#"
+        },
+        {
+            image: "assets/images/service/img_6.jpg",
+            title: "After Renovation",
+            link: "#"
+        }
+    ]
+
     return (
         <section id="services" class="padding ptb-xs-40 gray-bg service_sec">
             <div class="container">
@@ -20,12 +54,9 @@ export const ServicesSection = () => {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="service_slider_home next_btn_style">
-                            <ServiceBox image="assets/images/service/img_1.jpg" title="House Cleaning" link="#" />
-                            <ServiceBox image="assets/images/service/img_2.jpg" title="Apartment Cleaning" link="#" />
-                            <ServiceBox image="assets/images/service/img_3.jpg" title="Carpet Cleaning" link="#" />
-                            <ServiceBox image="assets/images/service/img_4.jpg" title="Commercial Cleaning" link="#" />
-                            <ServiceBox image="assets/images/service/img_5.jpg" title="Residential Cleaning" link="#" />
-                            <ServiceBox image="assets/images/service/img_6.jpg" title="After Renovation" link="#" />
+                            {
+                                services.map((service, index) => <ServiceBox key={index} {...service} />)
+                            }
                         </div>
                     </div>
                 </div>
