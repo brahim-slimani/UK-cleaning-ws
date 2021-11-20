@@ -1,6 +1,7 @@
+import { ServiceBox } from 'components/shared';
 import React from 'react';
 
-export const ServicesSection = (props) => {
+export const ServicesSection = () => {
     return (
         <section id="services" class="padding ptb-xs-40 gray-bg service_sec">
             <div class="container">
@@ -17,73 +18,17 @@ export const ServicesSection = (props) => {
                 </div>
 
                 <div class="row">
-
                     <div class="col-md-12">
                         <div class="service_slider_home next_btn_style">
-                            <div class="service_box">
-                                <figure>
-                                    <img src="assets/images/service/img_1.jpg" alt="" />
-                                </figure>
-                                <h3><a href="#">House Cleaning</a></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
-                                </p>
-                            </div>
-
-                            <div class="service_box">
-                                <figure>
-                                    <img src="assets/images/service/img_2.jpg" alt="" />
-                                </figure>
-                                <h3><a href="#">Apartment Cleaning</a></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
-                                </p>
-                            </div>
-
-                            <div class="service_box">
-                                <figure>
-                                    <img src="assets/images/service/img_3.jpg" alt="" />
-                                </figure>
-                                <h3><a href="#">Carpet Cleaning</a></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
-                                </p>
-                            </div>
-
-                            <div class="service_box">
-                                <figure>
-                                    <img src="assets/images/service/img_4.jpg" alt="" />
-                                </figure>
-                                <h3><a href="#">Commercial Cleaning</a></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
-                                </p>
-                            </div>
-
-                            <div class="service_box">
-                                <figure>
-                                    <img src="assets/images/service/img_5.jpg" alt="" />
-                                </figure>
-                                <h3><a href="#">Residential Cleaning</a></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
-                                </p>
-                            </div>
-
-                            <div class="service_box">
-                                <figure>
-                                    <img src="assets/images/service/img_6.jpg" alt="" />
-                                </figure>
-                                <h3><a href="#">After Renovation</a></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
-                                </p>
-                            </div>
+                            <ServiceBox image="assets/images/service/img_1.jpg" title="House Cleaning" link="#" />
+                            <ServiceBox image="assets/images/service/img_2.jpg" title="Apartment Cleaning" link="#" />
+                            <ServiceBox image="assets/images/service/img_3.jpg" title="Carpet Cleaning" link="#" />
+                            <ServiceBox image="assets/images/service/img_4.jpg" title="Commercial Cleaning" link="#" />
+                            <ServiceBox image="assets/images/service/img_5.jpg" title="Residential Cleaning" link="#" />
+                            <ServiceBox image="assets/images/service/img_6.jpg" title="After Renovation" link="#" />
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
     );
