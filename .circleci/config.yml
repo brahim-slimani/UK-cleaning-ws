@@ -18,5 +18,5 @@ jobs:
             git config --global user.name "Slimani-Ibrahim"
       - add_ssh_keys:
           fingerprints:
-            - ""
+            - "de:f0:9d:4f:8e:80:db:cf:b0:c6:65:7b:89:2b:1e:54"
       - run: npm run deploy
