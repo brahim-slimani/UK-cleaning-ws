@@ -1,6 +1,7 @@
 import React from 'react';
+import { FeatureItem } from 'components/shared';
 
-export const AboutSection = (props) => {
+export const AboutSection = () => {
     return (
         // About
         <section id="about" class="padding ptb-xs-40">
@@ -24,52 +25,11 @@ export const AboutSection = (props) => {
                 </div>
 
                 <div class="row mt-30 mt-xs-0">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="clean_top mb-xs-30 feature-box">
-                            <div class="content">
-                                <img src="assets/images/cleaning-lady.svg" alt="" height="50" width="50" />
-                                <h3>Expert</h3>
-                                <p>
-                                    Lorem Ipsum is simply text the printing and typesetting standard industry.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="clean_top mb-xs-30 feature-box">
-                            <div class="content">
-                                <img src="assets/images/cleaner.svg" alt="" height="50" width="50" />
-                                <h3>Secure Services</h3>
-                                <p>
-                                    Lorem Ipsum is simply text the printing and typesetting standard industry.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-sm-30">
-                        <div class="clean_top mb-xs-30 feature-box">
-                            <div class="content">
-                                <img src="assets/images/clean.svg" alt="" height="50" width="50" />
-                                <h3>Low Costing</h3>
-                                <p>
-                                    Lorem Ipsum is simply text the printing and typesetting standard industry.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-sm-30">
-                        <div class="clean_top mb-xs-30 feature-box">
-                            <div class="content">
-                                <img src="assets/images/clean-1.svg" alt="" height="50" width="50" />
-                                <h3>On Time</h3>
-                                <p>
-                                    Lorem Ipsum is simply text the printing and typesetting standard industry.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <FeatureItem icon="assets/images/cleaning-lady.svg" title="Expert" />
+                    <FeatureItem icon="assets/images/cleaner.svg" title="Secure Services" />
+                    <FeatureItem icon="assets/images/clean.svg" title="Low Costing" />
+                    <FeatureItem icon="assets/images/clean-1.svg" title="On Time" />
                 </div>
-
             </div>
         </section>
     );

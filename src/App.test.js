@@ -7,4 +7,3 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-// 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
