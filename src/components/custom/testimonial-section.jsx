@@ -1,6 +1,27 @@
 import React from 'react';
+import { TestimonialItem } from 'components/shared';
 
-export const TestimonialSection = (props) => {
+export const TestimonialSection = () => {
+
+
+    const testimonials = [
+        {
+            author: "Andrew Flintoff",
+            image: "assets/images/testimonial/1.jpg",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text."
+        },
+        {
+            author: "Andrew Flintoff",
+            image: "assets/images/testimonial/2.jpg",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text."
+        },
+        {
+            author: "Andrew Flintoff",
+            image: "assets/images/testimonial/3.jpg",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text."
+        }
+    ]
+
     return (
         <section id="testimonial" class="padding ptb-xs-40 bg_Testimonial">
             <div class="container">
@@ -16,46 +37,9 @@ export const TestimonialSection = (props) => {
                     </div>
                 </div>
                 <div class="home_testimonial">
-
-                    <div class="testimonial_blog">
-
-                        <div class="author_detail">
-                            <div class="author_pic">
-                                <img src="assets/images/testimonial/1.jpg" alt="" />
-                            </div>
-                            <h3>Andrew Flintoff</h3>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial_blog">
-
-                        <div class="author_detail">
-                            <div class="author_pic">
-                                <img src="assets/images/testimonial/2.jpg" alt="" />
-                            </div>
-                            <h3>Andrew Flintoff</h3>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial_blog">
-
-                        <div class="author_detail">
-                            <div class="author_pic">
-                                <img src="assets/images/testimonial/3.jpg" alt="" />
-                            </div>
-                            <h3>Andrew Flintoff</h3>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
-                            </p>
-                        </div>
-                    </div>
-
+                    {
+                        testimonials.map((testimonial, index) => <TestimonialItem key={index} {...testimonial} />)
+                    }
                 </div>
             </div>
         </section>
