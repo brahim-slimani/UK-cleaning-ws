@@ -1,10 +1,14 @@
 import React from 'react';
-import { INFO_UTILITY, SECTION_LINKS_UTILITY } from 'helper';
+import Utils, { INFO_UTILITY, SECTION_LINKS_UTILITY, } from 'helper';
 
-export const Header = (props) => {
+
+export const Header = () => {
+
+    Utils.navbarUtils();
 
     return (
         <header id="header" class="header header-1 header_tran">
+
             <div id="top-bar" class="top-bar-section top-bar-bg-color">
                 <div class="container">
                     <div class="row">
