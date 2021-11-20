@@ -1,3 +1,4 @@
+import { SECTION_LINKS_UTILITY } from 'helper';
 import React from 'react';
 
 export const LandingPageCarouselItem = (props) => {
@@ -32,7 +33,7 @@ export const LandingPageCarouselItem = (props) => {
                     <p>
                         {content}
                     </p>
-                    <a class="btn-text" href style={{ padding: "17px" }}> Read More</a>
+                    <a href={SECTION_LINKS_UTILITY.ABOUT} class="btn-text" style={{ padding: "18px" }}> Read More</a>
                 </div>
             </div>
         </li>

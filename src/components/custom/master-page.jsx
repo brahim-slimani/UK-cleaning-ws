@@ -13,6 +13,7 @@ import {
 } from 'components/custom/';
 import { Loader, ScrollerBtn } from 'components/shared'
 import Helper from 'helper/index';
+import $ from 'jquery'
 
 export const MasterPage = () => {
 
@@ -66,16 +67,20 @@ export const MasterPage = () => {
 
         Helper.importStyles(styles);
         Promise.resolve(Helper.importScripts(['assets/js/jquery.min.js'])).then(() => {
-            window.onload = () => {
-                if (window.jQuery) {
-                    // jQuery is loaded  
-                    Helper.importScripts(resources);
-                    setShouldbeRendred(true);
-                } else {
-                    // jQuery is not loaded
-                    alert("Something went rong !"); setShouldbeRendred(true);
-                }
-            }
+            //window.onload = () => {
+            // if (typeof jQuery !== undefined) {
+            //     // jQuery is loaded  
+            //     Helper.importScripts(resources);
+            //     setShouldbeRendred(true);
+            // } else {
+            //     // jQuery is not loaded
+            //     alert("Something went rong !"); setShouldbeRendred(true);
+            // }
+            //}
+            $(document).ready(() => {
+                Helper.importScripts(resources);
+                setShouldbeRendred(true);
+            })
         });
     }, []);
 
