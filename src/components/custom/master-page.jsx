@@ -94,8 +94,8 @@ export const MasterPage = () => {
                         <ServicesSection />
                         <TeamSection />
                         <WorkSection />
-                        <TestimonialSection />
                         <ContactForm />
+                        <TestimonialSection />
                         <Footer />
                     </>
             }
