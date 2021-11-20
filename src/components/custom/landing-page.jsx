@@ -1,6 +1,31 @@
 import React from 'react';
+import { LandingPageCarouselItem } from 'components/shared';
 
 export const LandingPage = () => {
+
+    const landingItems = [
+        {
+            dataIndex: "rs-129",
+            slideId:"slide-129-layer-1",
+            image: "assets/images/banner/slider1.jpg",
+            title: "The best cleaning company in the country",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.            "
+        },
+        {
+            dataIndex: "rs-130",
+            slideId:"slide-130-layer-1",
+            image: "assets/images/banner/slider2.jpg",
+            title: "Professional Cleaning Services Provider",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.            "
+        },
+        {
+            dataIndex: "rs-131",
+            slideId:"slide-131-layer-1",
+            image: "assets/images/banner/slider3.jpg",
+            title: "We Are Cleaning Manager Always at Your Service",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.            "
+        }
+    ]
 
     return (
         <section id="home" class="main-banner banner_up">
@@ -8,8 +33,7 @@ export const LandingPage = () => {
                 {/* START REVOLUTION SLIDER 5.0.7 fullwidth mode  */}
                 <div id="rev_slider_34_1" class="rev_slider" data-version="5.0.7">
                     <ul>
-                        <li data-index="rs-129"  >
-                            {/* MAIN IMAGE */}
+                        {/* <li data-index="rs-129"  >
                             <img src="assets/images/banner/slider1.jpg" alt="" class="rev-slidebg" />
 
                             <div class="tp-caption Newspaper-Title tp-resizeme "
@@ -39,9 +63,9 @@ export const LandingPage = () => {
                                     <a class="btn-text" href style={{ padding: "17px" }}> Read More</a>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
 
-                        <li data-index="rs-130" data-title="" data-description="">
+                        {/* <li data-index="rs-130" data-title="" data-description="">
 
                             <img src="assets/images/banner/slider2.jpg" alt="" class="rev-slidebg" />
 
@@ -73,12 +97,10 @@ export const LandingPage = () => {
                                 </div>
                             </div>
                         </li>
-                        {/* SLIDE */}
+                     
                         <li data-index="rs-131">
-                            {/* MAIN IMAGE */}
                             <img src="assets/images/banner/slider3.jpg" alt="" class="rev-slidebg " />
-                            {/* LAYERS */}
-                            {/* LAYER NR.2 */}
+                         
                             <div class="tp-caption Newspaper-Title   tp-resizeme "
                                 id="slide-131-layer-1"
                                 data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
@@ -106,8 +128,10 @@ export const LandingPage = () => {
                                     <a class="btn-text" href> Read More</a>
                                 </div>
                             </div>
-                        </li>
-                        {/* SLIDE */}
+                        </li> */}
+                        {
+                            landingItems.map((item, index) => <LandingPageCarouselItem key={index} {...item} />)
+                        }
                     </ul>
                     <div class="tp-bannertimer tp-bottom"></div>
                 </div>

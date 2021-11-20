@@ -6,25 +6,25 @@ export const TeamSection = () => {
 	const teams = [
 		{
 			name: "Josh Philippe",
-			position: "Cleaner",
+			position: "Manager",
 			image: "assets/images/team/team1.jpg",
 			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
 		},
 		{
 			name: "Marcus Stoinis",
-			position: "Cleaner",
+			position: "Cleaning Agent",
 			image: "assets/images/team/team2.jpg",
 			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
 		},
 		{
 			name: "Jackson Coleman",
-			position: "Cleaner",
+			position: "Cleaning Agent",
 			image: "assets/images/team/team3.jpg",
 			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
 		},
 		{
 			name: "Mackenzie Harvey",
-			position: "Cleaner",
+			position: "Supervisor",
 			image: "assets/images/team/team4.jpg",
 			socialLinks: { fb: "#", linkedIn: "#", twitter: "#", youtube: "#" }
 		}

@@ -1,7 +1,9 @@
 import React from 'react';
 
 export const TeamMemberCard = (props) => {
-    const {name, position, image, socialLinks} = props;
+    let { name, position, image, socialLinks } = props;
+    // eslint-disable-next-line no-script-url
+    socialLinks = { fb: "javascript:avoid(0);", linkedIn: "javascript:avoid(0);", twitter: "javascript:avoid(0);", youtube: "javascript:avoid(0);" }
     return (
         <div class="col-lg-3 col-md-6 mt-xs-30">
             <div class="team_box img-scale">
@@ -22,16 +24,16 @@ export const TeamMemberCard = (props) => {
                 <div class="social_team">
                     <ul>
                         <li>
-                            <a href={socialLinks.fb}><i class="fa fa-facebook"></i></a>
+                            <a href={socialLinks?.fb}><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href={socialLinks.twitter}><i class="fa fa-twitter"></i></a>
+                            <a href={socialLinks?.twitter}><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href={socialLinks.linkedIn}><i class="fa fa-linkedin"></i></a>
+                            <a href={socialLinks?.linkedIn}><i class="fa fa-linkedin"></i></a>
                         </li>
                         <li>
-                            <a href={socialLinks.youtube}><i class="fa fa-youtube"></i></a>
+                            <a href={socialLinks?.youtube}><i class="fa fa-youtube"></i></a>
                         </li>
                     </ul>
                 </div>

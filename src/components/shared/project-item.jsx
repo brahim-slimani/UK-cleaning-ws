@@ -9,8 +9,8 @@ export const ProjectItem = (props) => {
             <div class="item-box">
                 <a href> <img alt="1" src={image} class="item-container" /> </a>
                 <div class="link-zoom">
-                    <a href="project-details.html" class="project_links same_style"> <i class="fa fa-link"> </i> </a>
-                    <a href="assets/images/project/project_3.jpg" class="fancylight popup-btn same_style" data-fancybox-group="light" > <i class="fa fa-search-plus"></i> </a>
+                    <a href class="project_links same_style"> <i class="fa fa-link"> </i> </a>
+                    <a href={image} class="fancylight popup-btn same_style" data-fancybox-group="light" > <i class="fa fa-search-plus"></i> </a>
                     <div class="gallery-heading">
                         <h4><a href={link}>{title}</a></h4>
                     </div>

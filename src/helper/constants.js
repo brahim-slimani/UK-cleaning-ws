@@ -18,5 +18,4 @@ export const SECTION_LINKS_UTILITY = {
     TEAM: "#team",
     PROJECT: "#project",
     OVERVIEW: "#company-overview"
-
 }
