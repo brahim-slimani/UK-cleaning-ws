@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const LandingPage = (props) => {
+export const LandingPage = () => {
 
     return (
-        <section id="!" class="main-banner banner_up">
+        <section id="home" class="main-banner banner_up">
             <div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper" data-alias="news-gallery34">
                 {/* START REVOLUTION SLIDER 5.0.7 fullwidth mode  */}
                 <div id="rev_slider_34_1" class="rev_slider" data-version="5.0.7">
@@ -36,7 +36,7 @@ export const LandingPage = (props) => {
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
                                     </p>
-                                    <a class="btn-text" href="#" style={{ padding: "17px" }}> Read More</a>
+                                    <a class="btn-text" href style={{ padding: "17px" }}> Read More</a>
                                 </div>
                             </div>
                         </li>
@@ -69,7 +69,7 @@ export const LandingPage = (props) => {
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
                                     </p>
-                                    <a class="btn-text" href="#"> Read More</a>
+                                    <a class="btn-text" href> Read More</a>
                                 </div>
                             </div>
                         </li>
@@ -103,7 +103,7 @@ export const LandingPage = (props) => {
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
                                     </p>
-                                    <a class="btn-text" href="#"> Read More</a>
+                                    <a class="btn-text" href> Read More</a>
                                 </div>
                             </div>
                         </li>

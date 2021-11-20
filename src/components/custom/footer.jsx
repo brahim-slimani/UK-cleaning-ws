@@ -1,6 +1,7 @@
 import React from 'react';
+import { INFO_UTILITY, SECTION_LINKS_UTILITY } from 'helper';
 
-export const Footer = (props) => {
+export const Footer = () => {
     return (
         <footer>
             <div class="top_footer_info__block ptb-20">
@@ -9,13 +10,13 @@ export const Footer = (props) => {
                         <div class="col-md-4">
                             <div class="single_info__block">
                                 <i class="fa fa-phone"></i>
-                                <h4>0(000) 000 000 <span>Monday-Friday, 8am-7pm</span></h4>
+                                <h4>{INFO_UTILITY.COMPANY_PHONE} <span>Monday-Friday, 8am-7pm</span></h4>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single_info__block">
                                 <i class="fa fa-envelope-o"></i>
-                                <h4>business@support.com <span>Monday-Friday, 8am-7pm</span></h4>
+                                <h4>{INFO_UTILITY.COMPANY_EMAIL} <span>Monday-Friday, 8am-7pm</span></h4>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -43,44 +44,39 @@ export const Footer = (props) => {
                         </div>
                         <div class="col-lg-3 mt-sm-30 mt-xs-30">
                             <div class="footer_box__block">
-                                <h4>Latest Blog Post</h4>
+                                <h4>Useful Links</h4>
                                 <ul>
                                     <li>
-                                        <a href="#">Start your own agency</a>
+                                        <a href={SECTION_LINKS_UTILITY.HOME}>HOME</a>
                                     </li>
                                     <li>
-                                        <a href="#">How to cool down quality</a>
+                                        <a href={SECTION_LINKS_UTILITY.ABOUT}>ABOUT</a>
                                     </li>
                                     <li>
-                                        <a href="#">Make something awesome</a>
+                                        <a href={SECTION_LINKS_UTILITY.OVERVIEW}>OVERVIEW</a>
                                     </li>
                                     <li>
-                                        <a href="#">Plane your summer vacation</a>
+                                        <a href={SECTION_LINKS_UTILITY.SERVICES}>SERVICES</a>
                                     </li>
-                                    <li>
-                                        <a href="#">There are sunlight to enjoy</a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 mt-xs-30 mt-sm-30">
                             <div class="footer_box__block">
-                                <h4>Our Project</h4>
+                                <h4>Sequel Links</h4>
                                 <ul>
                                     <li>
-                                        <a href="#">Go get an ice-cream</a>
+                                        <a href={SECTION_LINKS_UTILITY.TEAM}>TEAM</a>
                                     </li>
                                     <li>
-                                        <a href="#">Become the best version</a>
+                                        <a href={SECTION_LINKS_UTILITY.PROJECT}>PROJECT</a>
                                     </li>
                                     <li>
-                                        <a href="#">Eat, Sleep and have fun</a>
+                                        <a href={SECTION_LINKS_UTILITY.TESTIMONIAL}>TETIMONIAL</a>
                                     </li>
                                     <li>
-                                        <a href="#">Start the journy to the top</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Can you do this for us?</a>
+                                        <a href={SECTION_LINKS_UTILITY.CONTACT}>CONTACT</a>
                                     </li>
                                 </ul>
                             </div>
@@ -92,19 +88,19 @@ export const Footer = (props) => {
                                     <li>
                                         <i class="fa fa-phone"></i>
                                         <p>
-                                            Call Us +56 (0) 012 345 6789
+                                            Call Us {INFO_UTILITY.COMPANY_PHONE}
                                         </p>
                                     </li>
                                     <li>
                                         <i class="fa fa-envelope-o"></i>
                                         <p>
-                                            <a href="mailto:info@example.com">business@support.com</a>
+                                            <a href={`mailto:${INFO_UTILITY.COMPANY_EMAIL}`}>{INFO_UTILITY.COMPANY_EMAIL}</a>
                                         </p>
                                     </li>
                                     <li>
                                         <i class="fa fa-map-marker"></i>
                                         <p>
-                                            123 Main Street, St. NW Ste, 1 Washington, DC,USA.
+                                            {INFO_UTILITY.COMPANY_ADDRESS}
                                         </p>
                                     </li>
                                     <li>
@@ -122,7 +118,7 @@ export const Footer = (props) => {
                     <div class="copyriight_block ptb-20 mt-20">
                         <div class="row">
                             <div class="col-sm-6">
-                                <a href="#" class="footer__block-logo"><img src="assets/images/logo.png" alt="" /></a>
+                                <a href class="footer__block-logo"><img src="assets/images/Colbritish_Logo.png" alt="" /></a>
                             </div>
                             <div class="col-sm-6 text-right">
                                 <p>

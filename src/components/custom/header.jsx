@@ -1,5 +1,5 @@
 import React from 'react';
-import { INFO_UTILITY } from 'helper';
+import { INFO_UTILITY, SECTION_LINKS_UTILITY } from 'helper';
 
 export const Header = (props) => {
 
@@ -12,10 +12,10 @@ export const Header = (props) => {
                             <div class="top_loction pull-left">
                                 <ul>
                                     <li>
-                                        <a href="#!"><i class="fa fa-map-marker"></i> {INFO_UTILITY.COMPANY_ADDRESS} </a>
+                                        <a href="#home"><i class="fa fa-map-marker"></i> {INFO_UTILITY.COMPANY_ADDRESS} </a>
                                     </li>
                                     <li>
-                                        <a href="mailto:Support@Domain.Com"><i class="fa fa-envelope"></i> {INFO_UTILITY.COMPANY_EMAIL}</a>
+                                        <a href={`mailto:${INFO_UTILITY.COMPANY_EMAIL}`}><i class="fa fa-envelope"></i> {INFO_UTILITY.COMPANY_EMAIL}</a>
                                     </li>
                                     <li>
                                         <a href="tel:1234567890"><i class="fa fa-phone"></i> {INFO_UTILITY.COMPANY_PHONE}</a>
@@ -53,28 +53,28 @@ export const Header = (props) => {
                                 <nav class="navigation">
                                     <ul>
                                         <li>
-                                            <a href="#!">Home</a>
+                                            <a href={SECTION_LINKS_UTILITY.HOME}>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#about">About us</a>
+                                            <a href={SECTION_LINKS_UTILITY.ABOUT}>About us</a>
                                         </li>
                                         <li>
-                                            <a href="#company-overview">Overview</a>
+                                            <a href={SECTION_LINKS_UTILITY.OVERVIEW}>Overview</a>
                                         </li>
                                         <li>
-                                            <a href="#services">Services</a>
+                                            <a href={SECTION_LINKS_UTILITY.SERVICES}>Services</a>
                                         </li>
                                         <li>
-                                            <a href="#team">Team</a>
+                                            <a href={SECTION_LINKS_UTILITY.TEAM}>Team</a>
                                         </li>
                                         <li>
-                                            <a href="#work">Project</a>
+                                            <a href={SECTION_LINKS_UTILITY.PROJECT}>Project</a>
                                         </li>
                                         <li>
-                                            <a href="#testimonial">Testimonial</a>
+                                            <a href={SECTION_LINKS_UTILITY.TESTIMONIAL}>Testimonial</a>
                                         </li>
                                         <li>
-                                            <a href="#contact-form">Contact us</a>
+                                            <a href={SECTION_LINKS_UTILITY.CONTACT}>Contact us</a>
                                         </li>
                                     </ul>
 
