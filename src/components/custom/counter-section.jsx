@@ -1,6 +1,7 @@
 import React from 'react';
+import { WORK_PROJECTS_INFO } from 'helper';
 
-export const CounterSection = (props) => {
+export const CounterSection = () => {
     return (
         <div>
             <section id="company-overview" class="padding ptb-xs-40 counter_sec">
@@ -28,7 +29,7 @@ export const CounterSection = (props) => {
                                 <div class="col-lg-3 col-md-6">
                                     <div class="single-fact">
 
-                                        <span class="counter" data-count="3562">0</span>
+                                        <span class="counter" data-count={WORK_PROJECTS_INFO.TOTAL_PROJECTS}>0</span>
                                         <p>
                                             Total Projects
                                         </p>
@@ -37,7 +38,7 @@ export const CounterSection = (props) => {
                                 <div class="col-lg-3 col-md-6 mt-xs-30">
                                     <div class="single-fact">
 
-                                        <span class="counter" data-count="1054">0</span>
+                                        <span class="counter" data-count={WORK_PROJECTS_INFO.HAPPY_CLIENTS}>0</span>
                                         <p>
                                             Happy Clients
                                         </p>
@@ -46,7 +47,7 @@ export const CounterSection = (props) => {
                                 <div class="col-lg-3 col-md-6 mt-sm-30 mt-xs-30">
                                     <div class="single-fact">
 
-                                        <span class="counter" data-count="400">0</span>
+                                        <span class="counter" data-count={WORK_PROJECTS_INFO.ACTIVE_MEMBER}>0</span>
                                         <p>
                                             Active Member
                                         </p>
@@ -55,7 +56,7 @@ export const CounterSection = (props) => {
                                 <div class="col-lg-3 col-md-6 mt-sm-30 mt-xs-30">
                                     <div class="single-fact">
 
-                                        <span class="counter" data-count="67">0</span>
+                                        <span class="counter" data-count={WORK_PROJECTS_INFO.WON_AWARD}>0</span>
                                         <p>
                                             Won Award
                                         </p>

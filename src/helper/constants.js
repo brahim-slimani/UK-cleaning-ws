@@ -19,3 +19,10 @@ export const SECTION_LINKS_UTILITY = {
     PROJECT: "#project",
     OVERVIEW: "#company-overview"
 }
+
+export const WORK_PROJECTS_INFO = {
+    TOTAL_PROJECTS: 3562,
+    HAPPY_CLIENTS: 1054,
+    ACTIVE_MEMBER: 400,
+    WON_AWARD: 67,
+}
