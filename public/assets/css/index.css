@@ -506,3 +506,14 @@
 .project-detail-block {
 	padding: 30px;
 }
+
+/********** CUSTOM ************/
+.form-field-container {
+	display: flex;
+}
+
+@media screen and (max-width: 800px) {
+	.form-field-container {
+		flex-direction: column;
+	}
+}

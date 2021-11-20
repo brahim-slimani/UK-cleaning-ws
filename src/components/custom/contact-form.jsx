@@ -18,7 +18,7 @@ export const ContactForm = () => {
                             </div>
                             <div class="email_fill pb-5">
                                 <form>
-                                    <div class="d-flex">
+                                    <div class="form-field-container">
                                         <div className="form-field">
                                             <input class="input-md" id="name" type="text" name="form-name" placeholder="Your name" />
                                         </div>
@@ -26,7 +26,7 @@ export const ContactForm = () => {
                                             <input class="input-md" id="email" type="text" name="form-email" placeholder="Your Email" />
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="form-field-container">
                                         <div className="form-field">
                                             <input class="input-md" id="subject" type="text" name="form-subject" placeholder="Your subject" />
                                         </div>
