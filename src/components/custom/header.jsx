@@ -48,7 +48,7 @@ export const Header = () => {
                         <div class="row d-flex align-items-center">
                             <div class="col-md-3">
                                 <div class="logo">
-                                    <a href="index-2.html"><img src="assets/images/Colbritish_Logo.png" alt="" /></a>
+                                    <a href={SECTION_LINKS_UTILITY.HOME}><img src="assets/images/Colbritish_Logo.png" alt="" /></a>
                                 </div>
                                 {/* Phone Menu button */}
                                 <button id="menu" class="menu hidden-md-up"></button>
