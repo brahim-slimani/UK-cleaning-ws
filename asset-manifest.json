@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.js": "/UK-cleaning-ws/static/js/main.bff8cf38.chunk.js",
-    "main.js.map": "/UK-cleaning-ws/static/js/main.bff8cf38.chunk.js.map",
+    "main.js": "/UK-cleaning-ws/static/js/main.fecd9be1.chunk.js",
     "runtime-main.js": "/UK-cleaning-ws/static/js/runtime-main.af732343.js",
-    "runtime-main.js.map": "/UK-cleaning-ws/static/js/runtime-main.af732343.js.map",
-    "static/js/2.ecd4f137.chunk.js": "/UK-cleaning-ws/static/js/2.ecd4f137.chunk.js",
-    "static/js/2.ecd4f137.chunk.js.map": "/UK-cleaning-ws/static/js/2.ecd4f137.chunk.js.map",
+    "static/js/2.f04b4dbf.chunk.js": "/UK-cleaning-ws/static/js/2.f04b4dbf.chunk.js",
     "index.html": "/UK-cleaning-ws/index.html",
-    "static/js/2.ecd4f137.chunk.js.LICENSE.txt": "/UK-cleaning-ws/static/js/2.ecd4f137.chunk.js.LICENSE.txt"
+    "static/js/2.f04b4dbf.chunk.js.LICENSE.txt": "/UK-cleaning-ws/static/js/2.f04b4dbf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.af732343.js",
-    "static/js/2.ecd4f137.chunk.js",
-    "static/js/main.bff8cf38.chunk.js"
+    "static/js/2.f04b4dbf.chunk.js",
+    "static/js/main.fecd9be1.chunk.js"
   ]
 }
