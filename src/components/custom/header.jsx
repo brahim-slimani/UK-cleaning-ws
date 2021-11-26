@@ -1,7 +1,6 @@
 import React from 'react';
 import Utils, { INFO_UTILITY, SECTION_LINKS_UTILITY, } from 'helper';
 
-
 export const Header = () => {
 
     Utils.navbarUtils();

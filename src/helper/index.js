@@ -70,6 +70,11 @@ class Helper {
                     }
                 }
             });
+
+            //HIDE NAV MENU ON ITEM CLICK
+            $(".navigation > ul li").on("click", function () {
+                $("body").width() < 767 && $(".navigation").css("display", "none");
+            });
         })
     }
 
