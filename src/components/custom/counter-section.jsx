@@ -9,7 +9,7 @@ export const CounterSection = () => {
                     <div class="row text-center light-color mb-40 mb-xs-30">
                         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                             <div class="section-title_home">
-                                <h2>Company Overviewy</h2>
+                                <h2>Company Overview</h2>
                                 <span class="b-line"></span>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text.

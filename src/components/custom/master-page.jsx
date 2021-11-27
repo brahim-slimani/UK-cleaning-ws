@@ -40,10 +40,10 @@ export const MasterPage = () => {
             // revolution Js
             "assets/js/jquery.themepunch.tools.min.js",
             "assets/js/jquery.themepunch.revolution.min.js",
-            "assets/extensions/revolution.extension.slideanims.min.js",
-            "assets/extensions/revolution.extension.layeranimation.min.js",
-            "assets/extensions/revolution.extension.navigation.min.js",
-            "assets/extensions/revolution.extension.parallax.min.js",
+            // "assets/extensions/revolution.extension.slideanims.min.js",
+            // "assets/extensions/revolution.extension.layeranimation.min.js",
+            // "assets/extensions/revolution.extension.navigation.min.js",
+            // "assets/extensions/revolution.extension.parallax.min.js",
             "assets/js/jquery.revolution.js",
             // custom Js
             'assets/js/custom.js',
